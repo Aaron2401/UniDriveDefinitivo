@@ -1,0 +1,76 @@
+/* Estilos para el botón verde */
+.accept-ride-btn {
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 15px; /* Esquinas más redondeadas */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centra el botón */
+}
+
+/* Estilo para el hover del botón */
+button.accept-ride-btn:hover {
+    background-color: #80abc0; /* Color personalizado en hover */
+}
+
+/* Estilos de la tarjeta seleccionada */
+.ride-card.selected {
+    border: 2px solid #28a745; /* Borde verde para la tarjeta seleccionada */
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5); /* Sombra verde */
+}
+
+/* Estilos generales para las tarjetas */
+.rides-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contenedor de las tarjetas */
+.rides-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+/* Estilos de cada tarjeta */
+.ride-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 250px; /* Tamaño fijo para las tarjetas */
+    text-align: left; /* Alinear el contenido dentro de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagen del coche */
+.ride-card img {
+    width: 100%;
+    height: 150px; /* Tamaño estándar para las imágenes */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+    border-radius: 5px;
+}
+
+/* Botón de regresar al dashboard */
+.back-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px; /* Esquinas curveadas */
+    margin-top: 20px;
+    border: none; /* Eliminar borde negro */
+}
+
+/* Hover del botón de regresar */
+.back-btn:hover {
+    background-color: #0056b3;
+}

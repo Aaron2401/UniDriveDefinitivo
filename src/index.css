@@ -1,0 +1,7 @@
+/* Estilo general para el cuerpo de la página */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Hace que el cuerpo ocupe toda la altura de la página */
+  }
+  

@@ -1,0 +1,133 @@
+/* src/Pages/Profile/Profile.css */
+.profile-container {
+  padding: 30px;
+  min-height: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center; /* Centra el contenido horizontalmente */
+  background-color: #fff; /* Fondo blanco para la ventana */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+  max-width: 600px; /* Limita el ancho de la ventana */
+  margin: 20px auto; /* Centrado en la página */
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.profile-details {
+  width: 100%;
+  margin-top: 0;
+}
+
+.profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Aumento del espacio entre campos */
+}
+
+.profile-edit-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center; /* Centrado de los botones */
+}
+
+.save-button,
+.cancel-button,
+.edit-button,
+.back-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-button {
+  background-color: #ff4136;
+  color: white;
+  border: none;
+}
+
+.cancel-button:hover {
+  background-color: #e02f1b;
+}
+
+.profile-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Botón centrado */
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.profile-bottom-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.back-button:hover {
+  background-color: #218838;
+}
+
+.profile-details p {
+  margin-bottom: 10px; /* Espacio más grande entre los detalles */
+  font-size: 16px;
+  color: #333;
+}
+
+.profile-details label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.profile-edit-form input,
+.profile-edit-form select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.profile-edit-form input:focus,
+.profile-edit-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.profile-footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}

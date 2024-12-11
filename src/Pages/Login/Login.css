@@ -1,0 +1,30 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6e8e3;
+  min-height: 100vh;
+  padding: 20px 80px;
+  position: relative; /* Mantén el posicionamiento relativo */
+}
+
+.login-content {
+  display: flex;
+  background: #a4c6d7;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 40px;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.login-logo {
+  position: absolute;
+  top: 20px; /* Ajusta la distancia desde la parte superior */
+  right: 20px; /* Ajusta la distancia desde la parte derecha */
+  width: 200px; /* Ajusta el tamaño del logo */
+  height: auto;
+  z-index: 10; /* Asegura que la imagen no quede detrás de otros elementos */
+}

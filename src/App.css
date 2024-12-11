@@ -1,0 +1,22 @@
+/* App.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Spotify';
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'Spotify';
+  src: url('./assets/Fonts/Gotham-Light.otf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+

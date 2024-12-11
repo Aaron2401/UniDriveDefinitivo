@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "Monse";
+  src: url("./../../assets/Fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: normal;
+}
+
+body {
+  font-family: "Monse" !important; /* Asegura que se use esta fuente con prioridad */
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  overflow: hidden;
+  background-color: #f5f7fa;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  background-color: #113459;
+  color: #ecf0f1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 3px solid #a4c6d7;
+}
+
+.profile-name {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.profile-button {
+  background-color: #a4c6d7;
+  border: none;
+  padding: 10px;
+  color: #113459;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.profile-button:hover {
+  background-color: #0088cc;
+  color: #fff;
+}
+
+.nav {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: #ecf0f1;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #a4c6d7;
+  color: #113459;
+}
+
+/* Contenido principal */
+.main-content {
+  margin-left: 240px;
+  flex: 1;
+  background-color: #f5f7fa;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.main-header {
+  background-color: #113459;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Bloques */
+.section {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  margin: 0 0 15px;
+  color: #113459;
+}
+
+.section img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.image-container img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.daily-quote {
+  font-size: 1.2rem;
+  color: #0088cc;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Botones */
+.action-button {
+  display: inline-block;
+  background-color: #0088cc;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #005f99;
+}
+
+/* Logout */
+/* Contenedor del botón de Cerrar sesión */
+.logout-section {
+  margin-top: auto; /* Empuja el botón hacia la parte inferior */
+  
+}
+
+/* Botón de Cerrar sesión */
+.logout-button {
+  background-color: #e74c3c;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+
+/* Ventana emergente (modal) */
+.logout-confirmation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logout-confirmation {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.logout-confirmation p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.confirm-button,
+.cancel-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.confirm-button {
+  background-color: #00ccdd;
+  color: white;
+}
+
+.confirm-button:hover {
+  background-color: #0088cc;
+  transform: scale(1.05);
+}
+
+.cancel-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Sección de Lugares Sugeridos */
+/* Sección de Lugares Sugeridos */
+.lugares-sugeridos {
+  margin-top: 30px;
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 30px; /* Espacio adicional entre esta sección y la siguiente */
+}
+
+.lugares-sugeridos h2 {
+  font-size: 1.8rem;
+  color: #113459;
+  margin-bottom: 20px;
+  text-align: left; /* Alineación a la izquierda */
+}
+
+.lugares-sugeridos .image-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px; /* Espacio entre las imágenes */
+}
+
+.lugares-sugeridos .image-container img {
+  width: 100px; /* Tamaño pequeño para las imágenes */
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Efecto al pasar el ratón */
+}
+
+.lugares-sugeridos .image-container img:hover {
+  transform: scale(1.05); /* Efecto hover: aumenta un poco el tamaño */
+}
+
+
+
+
+
+
+
+
+
+

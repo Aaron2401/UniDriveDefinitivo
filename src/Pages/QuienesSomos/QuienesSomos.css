@@ -1,0 +1,120 @@
+/* General styles */
+@font-face {
+  font-family: "Monse";
+  src: url("./../../assets/Fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: normal;
+}
+
+.about-us-container {
+  font-family: 'Monse';
+  background-color: #e6e8e3;
+  color: #333;
+  padding: 20px 80px !important; /* Padding ajustado con !important */
+  margin-top: 0px; /* Cambié el margin-top a 0 para que no haya margen superior */
+  min-height: 100vh; /* Aseguramos que la altura mínima sea 100vh */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alineamos a la izquierda para ocupar todo el espacio */
+  justify-content: flex-start; /* Alineamos al inicio de la página */
+  box-sizing: border-box; /* Asegura que el padding esté incluido en el tamaño del contenedor */
+}
+
+/* Header Section */
+.about-us-header {
+  text-align: left; /* Cambié para alinear el texto a la izquierda */
+  margin-bottom: 40px;
+  width: 100%; /* Aseguramos que el header ocupe todo el espacio */
+}
+
+.about-us-header h1 {
+  font-size: 4rem;
+  color: #113459;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+  margin: 0; /* Elimina márgenes extra */
+}
+
+.about-us-header p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-top: 10px;
+  text-align: justify;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%; /* Asegura que el párrafo ocupe todo el ancho */
+}
+
+/* ==== Estilos para TÍTULOS ==== */
+.about-us-title-block {
+  background-color: #113459; /* Azul oscuro */
+  padding: 15px 0;
+  text-align: center;
+  width: 100%; /* Ocupa todo el ancho */
+  margin: 0; /* Sin márgenes */
+}
+
+.about-us-title-block h2 {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* ==== Estilos para BLOQUES DE CONTENIDO ==== */
+.about-us-text-block {
+  background-color: #a4c6d7; /* Azul claro */
+  border-radius: 0 0 15px 15px; /* Bordes inferiores redondeados */
+  padding: 20px;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  box-sizing: border-box; /* Asegura que el padding se sume al tamaño del bloque */
+  margin-bottom: 30px;
+}
+
+.about-us-text-block p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 20px;
+  width: 100%; /* Asegura que el texto ocupe todo el ancho */
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ==== Enlaces dentro de bloques de contenido ==== */
+.about-us-text-block a {
+  color: #113459;
+  text-decoration: none;
+}
+
+.about-us-text-block a:hover {
+  text-decoration: underline;
+}
+
+/* ==== Bloque de contacto ==== */
+.about-us-section {
+  margin: 0 0 30px 0; /* Elimina el margen superior entre bloques */
+  width: 100%;
+}
+
+/* ==== Estilos adicionales para Bloques de Secciones ==== */
+.about-us-section-block {
+  background-color: #a4c6d7; /* Azul claro */
+  border-radius: 0 0 15px 15px; /* Bordes inferiores redondeados */
+  padding: 20px;
+  margin: 0 0 30px 0; /* Elimina el margen superior entre bloques */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+.about-us-image {
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente la imagen */
+  max-width: 40%; /* Asegura que la imagen no sea más ancha que el contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  padding-top: -40px;
+  padding-block-end: 30px;
+}
+
+.about-us-header img,
+.about-us-content-block img {
+  max-width: 100%; /* Asegura que las imágenes no sean más anchas que su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}

@@ -1,0 +1,94 @@
+.header {
+    background: linear-gradient(to right, #113459, #113459); /* Fondo con degradado de verde claro a verde oscuro */
+    padding: 2px; /* Espaciado interno de 15px en todos los lados */
+    display: flex; /* Configura el contenedor como un flexbox */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    color: white; /* Color del texto en negro */
+    position: sticky; /* Hace que el header quede fijo en la parte superior al hacer scroll */
+    top: 0; /* Fija el header al borde superior */
+    z-index: 1000; /* Coloca el header por encima de otros elementos */
+}
+
+.header-left {
+    display: flex; /* Configura el contenedor como un flexbox */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    gap: 25px; /* Espaciado horizontal entre los elementos */
+}
+
+.logo {
+    height: 150px; /* Altura fija del logo */
+    font-size: 0em;
+    padding: 1px 3px 17px 0px;
+    margin: -31px;
+}
+
+
+/* Navegación */
+.nav-links {
+    display: flex; /* Configura el contenedor como un flexbox */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    gap: 25px;
+    font-size: medium; /* Espaciado horizontal entre los enlaces */
+}
+
+.nav-link {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Color negro para el texto */
+    font-size: 35px; /* Tamaño del texto */
+    font-weight: 500; /* Grosor medio del texto */
+    padding: 15px 25px; /* Aumenta el espaciado interno: 15px arriba/abajo, 25px izquierda/derecha */
+    border-radius: 8px; /* Bordes ligeramente más redondeados */
+    border: 1px solid transparent; /* Borde invisible para suavizar el hover */
+    transition: all 0.3s ease-in-out; /* Suaviza las transiciones de estilo en hover */
+}
+
+/* Efecto hover para todos los botones y enlaces */
+a, button, .auth-button, .nav-link {
+    text-decoration: none; /* Elimina el subrayado en todos los enlaces */
+    color: black; /* Color negro por defecto */
+    transition: all 0.3s ease-in-out; /* Suaviza las transiciones de estilo en hover */
+}
+
+a:hover, button:hover, .auth-button:hover, .nav-link:hover {
+    color: rgb(0, 0, 0) !important; /* Cambia el texto a blanco al pasar el mouse */
+    background-color: #00CCDD !important; /* Cambia el fondo a verde oscuro al pasar el mouse */
+    transform: scale(1.1); /* Aumenta el tamaño un 10% al pasar el mouse */
+    text-shadow: 1px 0 50px #D2E0FB; /* Aplica un efecto de brillo blanco en el texto */
+}
+
+/* Botones de autenticación */
+.auth-links {
+    display: flex; /* Configura el contenedor como un flexbox */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    gap: 10px; /* Espaciado horizontal entre los botones */
+}
+
+.auth-button {
+    text-decoration: none; /* Elimina el subrayado del texto */
+    color: #000000; /* Texto negro para contraste */
+    padding: 8px 16px; /* Espaciado interno: 8px arriba/abajo, 16px izquierda/derecha */
+    border-radius: 12px; /* Bordes redondeados */
+    font-weight: 500; /* Grosor medio del texto */
+    font-size: 16px; /* Tamaño del texto */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cambia el cursor a "mano" al pasar sobre el botón */
+}
+
+/* Efectos de los enlaces de navegación dentro del header */
+.header nav a {
+    font-weight: 600; /* Grosor medio del texto */
+    padding: 10px; /* Espaciado interno de 10px en todos los lados */
+    color: white; /* Color negro para el texto */
+    border-radius: 15px; /* Bordes redondeados */
+    transition: all 0.3s ease-in-out; /* Suaviza las transiciones de estilo en hover */
+}
+
+.header nav a:hover {
+    color: rgb(0, 0, 0) !important; /* Cambia el color del texto a blanco al pasar el mouse */
+    text-shadow: 1px 0 50px rgb(0, 0, 0); /* Aplica un efecto de brillo blanco en el texto */
+    background-color: #7CF5FF !important; /* Cambia el fondo a verde oscuro al pasar el mouse */
+    transform: scale(1.1); /* Aumenta el tamaño un 10% al pasar el mouse */
+}
+
+

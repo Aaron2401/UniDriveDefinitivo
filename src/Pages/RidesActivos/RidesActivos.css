@@ -1,0 +1,159 @@
+/* Contenedor principal */
+.active-ride-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center; /* Centra el contenido */
+    max-width: 900px;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid #ccc; /* Borde estilo ventana */
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título */
+  .ride-title {
+    font-size: 2.5rem; /* Título más grande */
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Contenedor de la información del ride */
+  .ride-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Contenedor para imagen y texto */
+  .ride-info {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido */
+    gap: 20px;
+  }
+  
+  /* Imagen del coche */
+  .car-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Texto de los detalles del ride */
+  .ride-info-text {
+    text-align: left;
+    max-width: 400px; /* Limita el tamaño del texto */
+  }
+  
+  .ride-info-text p {
+    margin: 8px 0;
+    font-size: 1.2rem; /* Tamaño de texto más grande */
+  }
+  
+  /* Barra de progreso */
+  .ride-progress {
+    margin-top: 20px;
+    position: relative;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #4caf50;
+    animation: moveCar 10s linear infinite;
+  }
+  
+  .car-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('/path/to/car-icon.png'); /* Cambia el path de la imagen */
+    background-size: cover;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    animation: moveCarIcon 10s linear infinite;
+  }
+  
+  /* Animaciones */
+  @keyframes moveCar {
+    0% {
+      left: -100px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  @keyframes moveCarIcon {
+    0% {
+      left: -40px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  /* Botones */
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 1.2rem; /* Tamaño de texto más grande */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4d80f6;
+    color: white;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4d80f6;
+  }
+  
+  /* Botón de cancelar ride */
+  .cancel-btn {
+    background-color: red;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #dc3545;
+  }
+  
+  /* Botón de chat */
+  .chat-btn {
+    background-color: #4d80f6;
+  }
+  
+  .chat-btn:hover {
+    background-color: #4d80f6;
+  }
+  
+  /* Estilos del botón de regresar */
+  .back-btn {
+    background-color: #4d80f6;
+    color: white;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .back-btn:hover {
+    background-color: #0056b3;
+  }
+  
